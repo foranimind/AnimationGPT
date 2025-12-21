@@ -1,9 +1,9 @@
 """将npy文件夹下的npy格式动画转为bvh格式，改编自Momask"""
 
-#import matplotlib
-#import matplotlib.pyplot as plt
-#from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-#import mpl_toolkits.mplot3d.axes3d as p3
+import matplotlib
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+import mpl_toolkits.mplot3d.axes3d as p3
 import visualization.Animation as Animation
 from visualization.InverseKinematics import BasicInverseKinematics, BasicJacobianIK, InverseKinematics
 from visualization.Quaternions import Quaternions
