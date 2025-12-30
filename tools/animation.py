@@ -58,10 +58,10 @@ def plot_3d_motion(save_path, kinematic_tree, joints, title, figsize=(10, 10), f
     data[..., 2] -= data[:, 0:1, 2]
 
     def update(index):
-        while ax.lines:
-            ax.lines.pop(0)
-        while ax.collections:
-            ax.collections.pop(0)
+        for artist in list(ax.lines):
+            artist.remove()
+        for artist in list(ax.collections):
+            artist.remove()
 
         ax.view_init(elev=120, azim=-90)
         ax.dist = 7.5

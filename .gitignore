@@ -1,0 +1,69 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+*.dll
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.conda/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# Logs / caches
+*.log
+*.tmp
+*.swp
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# ML artifacts / experiment outputs
+results/
+outputs/
+runs/
+logs/
+lightning_logs/
+tb_logs/
+wandb/
+checkpoints/
+ckpts/
+experiments/
+exp/
+samples/
+renders/
+videos/
+figures/
+
+# Data / pretrained assets
+datasets/
+data/
+deps/
+pretrained/
+weights/
+models/

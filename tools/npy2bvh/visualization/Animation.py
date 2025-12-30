@@ -1,7 +1,10 @@
 import operator
 
 import numpy as np
-import numpy.core.umath_tests as ut
+try:
+    import numpy.core.umath_tests as ut
+except Exception:
+    ut = None
 
 from visualization.Quaternions import Quaternions
 
@@ -223,7 +226,9 @@ def transforms_multiply(t0s, t1s):
         together
     """
 
-    return ut.matrix_multiply(t0s, t1s)
+    if ut is not None:
+        return ut.matrix_multiply(t0s, t1s)
+    return np.matmul(t0s, t1s)
 
 
 def transforms_inv(ts):
